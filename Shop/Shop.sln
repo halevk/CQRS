@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{04F44CC6-B856-48F6-80AE-AB8D791E3C13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Order.Shared", "Shop.Order.Shared\Shop.Order.Shared.csproj", "{71AB251C-A28E-4151-8793-3FB8945D02E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71AB251C-A28E-4151-8793-3FB8945D02E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AB251C-A28E-4151-8793-3FB8945D02E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AB251C-A28E-4151-8793-3FB8945D02E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AB251C-A28E-4151-8793-3FB8945D02E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71AB251C-A28E-4151-8793-3FB8945D02E7} = {04F44CC6-B856-48F6-80AE-AB8D791E3C13}
+	EndGlobalSection
+EndGlobal
