@@ -40,13 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\FakeOrderInfoRepository.cs" />
+    <Compile Include="EventHandlers\OrderCreatedHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryHandlers\OrderListHandler.cs" />
+    <Compile Include="QueryHandlers\OrderSummaryHandler.cs" />
+    <Compile Include="QueryModels\OrderList.cs" />
+    <Compile Include="QueryModels\OrderListResult.cs" />
+    <Compile Include="QueryModels\OrderSummaryList.cs" />
+    <Compile Include="QueryModels\OrderSummaryListResult.cs" />
+    <Compile Include="Repositories\IOrderSummaryRepository.cs" />
+    <Compile Include="Repositories\IOrderInfoRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EventHandlers\" />
-    <Folder Include="QueryModels\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Shop.Order.Shared\Shop.Order.Shared.csproj">
       <Project>{71ab251c-a28e-4151-8793-3fb8945d02e7}</Project>

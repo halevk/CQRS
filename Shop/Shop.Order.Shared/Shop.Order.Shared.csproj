@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\DeliveryStatusChanged.cs" />
+    <Compile Include="Events\OrderCancelled.cs" />
+    <Compile Include="Events\OrderCreated.cs" />
     <Compile Include="IBus.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="ICommandHandler.cs" />

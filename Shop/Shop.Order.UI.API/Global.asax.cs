@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
-using System.Web.Routing;
+using System.Web.Http.Dependencies;
 
 namespace Shop.Order.UI.API
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
+        public static IServiceProvider ServiceProvider;
+        
         protected void Application_Start()
         {
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            ServiceProvider = ContainerRegistry.Register();
+            GlobalConfiguration.Configure(WebApiConfig.Register);           
         }
     }
 }

@@ -40,18 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandHandlers\CancelOrderHandler.cs" />
+    <Compile Include="CommandHandlers\ChangeDeliveryStatusHandler.cs" />
+    <Compile Include="CommandHandlers\CreateOrderHandler.cs" />
+    <Compile Include="Commands\CancelOrder.cs" />
+    <Compile Include="Commands\ChangeDeliveryStatus.cs" />
+    <Compile Include="Commands\CreateOrder.cs" />
+    <Compile Include="Data\FakeOrderRepository.cs" />
+    <Compile Include="Domains\Order.cs" />
+    <Compile Include="Domains\OrderItem.cs" />
+    <Compile Include="Domains\PaymentInfo.cs" />
+    <Compile Include="Errors\CreditLimitExceedException.cs" />
+    <Compile Include="ExternalServices\FakeCustomerCreditService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IOrderRepository.cs" />
+    <Compile Include="Services\ICustomerCreditService.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="CommandHandlers\" />
-    <Folder Include="Commands\" />
-    <Folder Include="Domains\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Shop.Order.Read\Shop.Order.Read.csproj">
-      <Project>{e2f39443-2a81-4403-ae3f-5876d6c6a371}</Project>
-      <Name>Shop.Order.Read</Name>
+    <ProjectReference Include="..\Shop.Order.Shared\Shop.Order.Shared.csproj">
+      <Project>{71ab251c-a28e-4151-8793-3fb8945d02e7}</Project>
+      <Name>Shop.Order.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
